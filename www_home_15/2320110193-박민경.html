@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>배열 객체 미션</h1>
+    <script type="text/javascript">
+        var size = parseInt(prompt("배열의 크기 : "));
+        var arr = [];
+
+        document.write("배열의 크기 : " + size + "<br>");
+        document.write("<br>");
+        
+        for (var i = 0; i < size; i++) {
+            arr[i] = prompt("글자 입력 하세요");
+        }
+
+
+        document.write("오름차순 정렬..." + "<br>");
+        document.write("<br>");
+
+        arr.sort();
+        for (var i = 0; i < size; i++) {
+            document.write("word_array[" + i + "]:" + arr[i] + "<br>");
+        }
+
+        document.write("<br>");
+        document.write("내림차순 정렬..." + "<br>");
+        document.write("<br>");
+
+        arr.sort().reverse();
+        for (var i = 0; i < size; i++) {
+            document.write("word_array[" + i + "]:" + arr[i] + "<br>");
+        }
+    </script>
+
+
+</body></html>
